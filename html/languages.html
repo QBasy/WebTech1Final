@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Languages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/feedback.js"></script>
+</head>
+
+<body style="background-color: white">
+<div class="navbarcontainer">
+    <nav class="navbar navbar-expand-lg navbar-light bg-lightgrey">
+        <a class="navbar-brand" href="#">WebTech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mainpage.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="languagesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Languages
+                    </a>
+                    <div class="dropdown-menu" role="button" aria-labelledby="languagesDropdown">
+                        <a class="dropdown-item" id="python" href="languages.html#Pythont">Python</a>
+                        <a class="dropdown-item" id="java" href="languages.html#javat">Java</a>
+                        <a class="dropdown-item" id="c#" href="languages.html#csharpt">C#</a>
+                        <a class="dropdown-item" id="c++" href="languages.html#cppt">C++</a>
+                        <a class="dropdown-item" id="go" href="languages.html#got">Go</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="frameworksDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Frameworks
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="frameworksDropdown">
+                        <a class="dropdown-item" href="frameworks.html">Django</a>
+                        <a class="dropdown-item" href="frameworks.html">Spring</a>
+                        <a class="dropdown-item" href="frameworks.html">.NET</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<br>
+
+<div class="container-fluid bg-dark text-white">
+    <hr>
+    <br>
+    <h3 style="text-align: center">Why do we need to use programming languages?</h3>
+    <br>
+    <ul>
+    <li>
+        Computers operate using binary code (0s and 1s), which is not human-friendly.
+    </li>
+    <li>
+        Programming languages act as an intermediary that allows humans to communicate instructions to computers in a more human-readable and understandable format.
+    </li>
+    <li>
+        Programming languages provide levels of abstraction that hide complex details of hardware and operations.
+    </li>
+    <li>
+        This abstraction simplifies the development process, allowing programmers to focus on solving problems without worrying about low-level implementation details.
+    </li>
+    </ul>
+    <br>
+</div>
+
+<br><br>
+
+<h4 style="text-align: center">There is some Languages you can work with:</h4>
+
+<br><br>
+
+<div class="list-group list-group-flush">
+    <a id="javat" href="" class="list-group-item">
+        <span class="language-logo-java">
+            <img src="../images/Java_logo.svg.png" alt="Java">
+            <h3 style="text-align: center">Java</h3>
+            <ul>
+                <li>Java is an object-oriented, platform-independent language known for its portability and robustness.</li>
+                <li>It is widely used in enterprise applications, Android app development, web applications, and large-scale distributed systems.</li>
+                <li>Java's "Write Once, Run Anywhere" philosophy is achieved through the Java Virtual Machine (JVM), which allows Java code to run on various platforms without modification.</li>
+            </ul>
+        </span>
+    </a>
+    <a id="csharpt" href="" class="list-group-item">
+        <span class="language-logo">
+            <img src ="../images/C%23.png" alt="C#">
+            <h3 style="text-align: center">C#</h3>
+            <ul>
+                <li>C# is a modern, object-oriented language developed by Microsoft.</li>
+                <li class="list-group-item-danger">It is primarily used for Windows application development, game development with Unity, and web development with ASP.NET.</li>
+                <li>C# integrates well with the .NET framework and provides features like strong typing, garbage collection, and a rich set of libraries.</li>
+            </ul>
+        </span>
+    </a>
+    <a id="Pythont" href="" class="list-group-item">
+        <span class="language-logo">
+            <img src="../images/Python.png" alt="Python">
+            <h3 style="text-align: center">Python:</h3>
+            <ul>
+                <li>Python is a high-level, dynamically-typed language known for its simplicity and readability.</li>
+                <li>It is commonly used in web development, data analysis, scientific computing, machine learning, and automation.</li>
+                <li>Python's extensive standard library and rich ecosystem of third-party packages make it versatile and suitable for various domains.</li>
+            </ul>
+        </span>
+    </a>
+    <a id="cppt" href="" class="list-group-item">
+        <span class="language-logo">
+            <img src ="../images/cpp.png" alt="c++">
+            <h3 style="text-align: center">C++:</h3>
+            <ul>
+                <li>C++ is a versatile and powerful programming language known for its performance and low-level control.</li>
+                <li>It is commonly used in systems programming, game development, embedded systems, and high-performance applications.</li>
+                <li>C++ is known for its ability to directly manipulate memory and provide a high level of performance optimization.</li>
+            </ul>
+        </span>
+    </a>
+    <a id="got" class="list-group-item">
+        <span class="language-logo-go">
+            <img src ="../images/go.png" alt="Go">
+            <h3 style="text-align: center">Go</h3>
+            <ul>
+                <li>Go is a statically-typed, compiled language designed for simplicity and efficiency.</li>
+                <li>It is often used in system programming, web development, and cloud-based microservices.</li>
+                <li>Go's simplicity and strong support for concurrency and parallelism make it well-suited for building scalable and efficient software.</li>
+            </ul>
+        </span>
+    </a>
+</div>
+
+<br><br><br><br><br>
+
+<div class = "mt-5 p-4 bg-dark text-white text-center">&copy; NoCopyrights</div>
+
+</body>
+</html>

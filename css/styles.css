@@ -1,0 +1,106 @@
+.header {
+    text-align: center;
+    font-family: "Arial Black", sans-serif;
+    position: sticky;
+}
+
+.center {
+    text-align: center;
+}
+
+form {
+    text-align: left;
+    position: relative;
+}
+
+.menu {
+    border: white;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbarcontainer {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.language-list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.language-list li {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+}
+
+.language-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.language-logo-java img {
+    width: 30px;
+    height: 60px;
+}
+
+.language-logo-go img {
+    width: 90px;
+    height: 60px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button {
+    width: 300px;
+    height: 30px;
+}
+
+.frameworks {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: azure;
+}
+
+.copyrights {
+    position: absolute;
+}
+
+.fw-backgrounds {
+    background-color: #333333;
+}
+
+.fw-backgrounds h4 {
+    color: azure;
+}
+.item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
