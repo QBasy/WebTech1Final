@@ -18,25 +18,51 @@
       height: 360px;
       background-color: black;
     }
+
     #customVideo {
       display: block;
       width: 100%;
     }
-    #djangoVideo {
-      width: 640px;
-      height: 360px;
-      background-color: black;
+
+    .custom-controls {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      box-sizing: border-box;
     }
-    #springVideo {
-      width: 640px;
-      height: 360px;
-      background-color: black;
+
+    button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
     }
-    #dotnetVideo {
-      width: 640px;
-      height: 360px;
-      background-color: black;
+
+    input {
+      width: 100px;
     }
+  #djangoVideo {
+    width: 640px;
+    height: 360px;
+    background-color: black;
+  }
+  #springVideo {
+    width: 640px;
+    height: 360px;
+    background-color: black;
+  }
+  #dotnetVideo {
+    width: 640px;
+    height: 360px;
+    background-color: black;
+  }
   </style>
 </head>
 <body>
@@ -90,15 +116,20 @@
   </div>
 </header>
 
+<div class="bg-dark">
+  <br><br>
+</div>
+
 <div class="container-fluid mt-5">
+  <h3 style="text-align: center;">Here is the Official pages of Frameworks</h3>
+  <br>
   <div class="row">
-    <h3>Here is the Official pages of:</h3>
-    <br>
-    <h4>Spring: <a href="https://spring.io/">Click</a></h4>
-    <h4>.NET: <a href="https://dotnet.microsoft.com/en-us/">Click</a></h4>
-    <h4>Django: <a href="https://www.djangoproject.com/">Click</a></h4>
-    <br>
+    <span class="col-4" style="position: relative; text-align: center"><a href="https://spring.io/"><img class="rounded" style="width: 100px; height: 100px" src="../images/Spring.png" alt="Spring"></a></span>
+    <span class="col-4" style="position: relative; text-align: center"><a href="https://dotnet.microsoft.com/en-us/"><img class="rounded" style="width: 100px; height: 100px" src="../images/dotnet.png" alt=".NET"></a></span>
+    <span class="col-4" style="position: relative; text-align: center"><a href="https://www.djangoproject.com/"><img class="rounded" style="width: 100px; height: 100px" src="../images/Django.png" alt="Django"></a></span>
   </div>
+  <br>
+  <br>
 </div>
 
 <div class="bg-dark">
@@ -107,21 +138,29 @@
 
 <br>
 <div class="container-fluid text-center">
-<div class="row">
-    <div class="col">
-      <div id="dotnetVideo"></div>
-    </div>
-    <div class="col">
-      <div id="djangoVideo"></div>
-    </div>
-    <div class="col">
-      <div id="springVideo"></div>
-    </div>
-</div>
+  <div class="row">
+      <div class="col">
+        <div id="dotnetVideo"></div>
+      </div>
+      <div class="col">
+        <div id="djangoVideo"></div>
+      </div>
+      <div class="col">
+        <div id="springVideo"></div>
+      </div>
+  </div>
 </div>
 
 <br><br><br><br>
-
+<div class="row">
+  <div class="col-sm-6">
+    <p style="text-align: right; padding-top: 15px" class="h6">Let's Check Your knowledge --></p>
+  </div>
+  <div class="col-sm-6">
+    <a href="quiz.html"><button class="btn btn-outline-dark btn-lg">QUIZ</button></a>
+  </div>
+</div>
+<br><br><br><br>
 <footer>
   <div class = "mt-5 p-4 bg-dark text-white text-center">&copy; NoCopyrights</div>
 </footer>
