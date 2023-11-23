@@ -87,5 +87,33 @@
     });
 </script>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="interactive-element" id="scrollTopElement">
+    <button id="scrollTopBtn" onclick="scrollTop()">Scroll to Top</button>
+</div>
+
+<!-- JavaScript (continued from Step 4) -->
+
+<script>
+    // Scroll to Top button
+    var scrollTopBtn = document.getElementById('scrollTopBtn');
+    console.log(scrollTopBtn);
+
+    window.onscroll = function() {
+        console.log('Scrolling...');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = 'block';
+        } else {
+            scrollTopBtn.style.display = 'none';
+        }
+    };
+
+    function scrollTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+$("#top").ready(function(){
+    $(window).scrollTop(0);
+});
+
 const hoverElements = $(".col");
 
 hoverElements.each(function() {
