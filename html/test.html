@@ -3,55 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-    <script src="../js/test.js"></script>
-    <link rel="stylesheet" href="../css/test.css">
+    <title>Interactive Webpage - Step 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .interactive-element {
+            padding: 20px;
+            background-color: #ddd;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
 <body>
+
 <header>
-    <h1>TESTPAGE FOR WebTech Final</h1>
+    <h1>Interactive Webpage - Step 1</h1>
 </header>
+
 <main>
     <div class="interactive-element" id="hoverElement">Hover me for an effect</div>
-    <div class="interactive-element" id="fullscreenVideoElement">
-        <button id="fullscreenBtn">Play Fullscreen Video</button>
-        <video id="fullscreenVideo" controls>
-            <source src="../video/becameSenior.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="interactive-element" id="modalBoxElement">
-        <button id="openModalBtn">Open Modal Box</button>
-        <div class="modal" id="myModal">
-            <div class="modal-content">
-                <span id="closeModalBtn">&times;</span>
-                <p>This is a modal box!</p>
-            </div>
-        </div>
-    </div>
-    <div class="interactive-element" id="formElement">
-        <div id="formContainer">
-            <div class="form-step active" id="step1">
-                <h2>Step 1</h2>
-                <button onclick="nextStep()">Next</button>
-            </div>
-            <div class="form-step" id="step2">
-                <h2>Step 2</h2>
-                <button onclick="nextStep()">Next</button>
-            </div>
-            <div class="form-step" id="step3">
-                <h2>Step 3</h2>
-                <button onclick="nextStep()">Next</button>
-            </div>
-            <div class="form-step" id="step4">
-                <h2>Step 4</h2>
-                <button onclick="submitForm()">Submit</button>
-            </div>
-        </div>
-    </div>
-    <div class="interactive-element" id="scrollTopElement">
-        <button id="scrollTopBtn" onclick="scrollTop()">Scroll to Top</button>
-    </div>
 </main>
+
+<script>
+    // Event listener for hover effect
+    var hoverElement = document.getElementById('hoverElement');
+
+    hoverElement.addEventListener('mouseover', function() {
+        this.style.backgroundColor = '#bbb';
+    });
+
+    hoverElement.addEventListener('mouseout', function() {
+        this.style.backgroundColor = '#ddd';
+    });
+</script>
+
+<div class="interactive-element" id="modalBoxElement">
+    <button id="openModalBtn">Open Modal Box</button>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span id="closeModalBtn">&times;</span>
+            <p>This is a modal box!</p>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript (continued from Step 2) -->
+
+<script>
+    // Modal box
+    var openModalBtn = document.getElementById('openModalBtn');
+    var closeModalBtn = document.getElementById('closeModalBtn');
+    var modal = document.getElementById('myModal');
+
+    openModalBtn.addEventListener('click', function() {
+        modal.style.display = 'block';
+    });
+
+    closeModalBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+
 </body>
 </html>

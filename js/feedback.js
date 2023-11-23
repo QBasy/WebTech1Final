@@ -144,3 +144,4 @@ function submitQuiz() {
     resultContainer.textContent = 'Your score: ' + score + '/10';
 }
 
+
