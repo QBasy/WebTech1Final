@@ -17,7 +17,7 @@ const newDiv = $("<div class=\"container card\" style=\"width:500px\">\n" +
 
 const submittedDiv = $("<h3 class='text-center'>Thanks for your Feedback, here is a button to start a simple game</h3>" +
     "<center><button id=\"startGame\" type=\"submit\" class=\"btn btn-primary\"><a href='../html/Drag&Drop.html'>Start Game</button></center>");
-const ids = ["python", "java", "c#", "c++", "go"];
+const ids = ["python", "java", "c#", "c++", "go", "CJava", "CPython", ""];
 const scrollButtonPython = document.getElementById(ids[0]);
 const scrollButtonJava = document.getElementById(ids[1]);
 const scrollButtonCSharp = document.getElementById(ids[2]);

@@ -1,3 +1,12 @@
+body {
+    border-left: 40px solid;
+    border-right: 40px solid;
+}
+
+.carousel_text {
+    font-size: smaller;
+}
+
 .header {
     text-align: center;
     font-family: "Arial Black", sans-serif;
