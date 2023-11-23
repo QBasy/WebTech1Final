@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script src="../js/test.js"></script>
+    <link rel="stylesheet" href="../css/test.css">
+</head>
+<body>
+<header>
+    <h1>TESTPAGE FOR WebTech Final</h1>
+</header>
+<main>
+    <div class="interactive-element" id="hoverElement">Hover me for an effect</div>
+    <div class="interactive-element" id="fullscreenVideoElement">
+        <button id="fullscreenBtn">Play Fullscreen Video</button>
+        <video id="fullscreenVideo" controls>
+            <source src="../video/becameSenior.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="interactive-element" id="modalBoxElement">
+        <button id="openModalBtn">Open Modal Box</button>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <span id="closeModalBtn">&times;</span>
+                <p>This is a modal box!</p>
+            </div>
+        </div>
+    </div>
+    <div class="interactive-element" id="formElement">
+        <div id="formContainer">
+            <div class="form-step active" id="step1">
+                <h2>Step 1</h2>
+                <button onclick="nextStep()">Next</button>
+            </div>
+            <div class="form-step" id="step2">
+                <h2>Step 2</h2>
+                <button onclick="nextStep()">Next</button>
+            </div>
+            <div class="form-step" id="step3">
+                <h2>Step 3</h2>
+                <button onclick="nextStep()">Next</button>
+            </div>
+            <div class="form-step" id="step4">
+                <h2>Step 4</h2>
+                <button onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="interactive-element" id="scrollTopElement">
+        <button id="scrollTopBtn" onclick="scrollTop()">Scroll to Top</button>
+    </div>
+</main>
+</body>
+</html>
