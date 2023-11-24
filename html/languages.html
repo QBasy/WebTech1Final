@@ -11,6 +11,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="../js/feedback.js"></script>
     <script src="../js/language.js"></script>
+    <style>
+        #hoverElement {
+            background-color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        #hoverElement:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 
 <body style="background-color: white">
@@ -24,7 +34,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li id="hoverElement" class="nav-item">
                         <a class="nav-link" href="mainpage.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -33,11 +43,11 @@
                             Languages
                         </a>
                         <div class="dropdown-menu" role="button" aria-labelledby="languagesDropdown">
-                            <a class="dropdown-item" id="python" href="languages.html#Pythont">Python</a>
-                            <a class="dropdown-item" id="java" href="languages.html#javat">Java</a>
-                            <a class="dropdown-item" id="c#" href="languages.html#csharpt">C#</a>
-                            <a class="dropdown-item" id="c++" href="languages.html#cppt">C++</a>
-                            <a class="dropdown-item" id="go" href="languages.html#got">Go</a>
+                            <a id="hoverElement" class="dropdown-item" id="python" href="languages.html#Pythont">Python</a>
+                            <a id="hoverElement" class="dropdown-item" id="java" href="languages.html#javat">Java</a>
+                            <a id="hoverElement" class="dropdown-item" id="c#" href="languages.html#csharpt">C#</a>
+                            <a id="hoverElement" class="dropdown-item" id="c++" href="languages.html#cppt">C++</a>
+                            <a id="hoverElement" class="dropdown-item" id="go" href="languages.html#got">Go</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -46,25 +56,22 @@
                             Frameworks
                         </a>
                         <div class="dropdown-menu" aria-labelledby="frameworksDropdown">
-                            <a class="dropdown-item" href="frameworks.html">Django</a>
-                            <a class="dropdown-item" href="frameworks.html">Spring</a>
-                            <a class="dropdown-item" href="frameworks.html">.NET</a>
+                            <a id="hoverElement" class="dropdown-item" href="frameworks.html">Django</a>
+                            <a id="hoverElement" class="dropdown-item" href="frameworks.html">Spring</a>
+                            <a id="hoverElement" class="dropdown-item" href="frameworks.html">.NET</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="video&sources.html">Videos & Sources</a>
+                        <a id="hoverElement" class="nav-link" href="video&sources.html">Videos & Sources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="feedback.html">Feedback</a>
+                        <a id="hoverElement" class="nav-link" href="feedback.html">Feedback</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 </header>
-<div>
-    <div class="interactive-element" id="hoverElement">Hover me for an effect</div>
-</div>
 
 <br>
 <main>
@@ -102,9 +109,9 @@
             <img src="../images/Java_logo.svg.png" alt="Java">
             <p class="h3" style="text-align: center">Java</p>
             <ul>
-                <li>Java is an object-oriented, platform-independent language known for its portability and robustness.</li>
-                <li>It is widely used in enterprise applications, Android app development, web applications, and large-scale distributed systems.</li>
-                <li>Java's "Write Once, Run Anywhere" philosophy is achieved through the Java Virtual Machine (JVM), which allows Java code to run on various platforms without modification.</li>
+                <li id="hoverElement">Java is an object-oriented, platform-independent language known for its portability and robustness.</li>
+                <li id="hoverElement">It is widely used in enterprise applications, Android app development, web applications, and large-scale distributed systems.</li>
+                <li id="hoverElement">Java's "Write Once, Run Anywhere" philosophy is achieved through the Java Virtual Machine (JVM), which allows Java code to run on various platforms without modification.</li>
             </ul>
         </div>
     </a>
@@ -113,9 +120,9 @@
             <img src ="../images/C%23.png" alt="C#">
             <p class="h3" style="text-align: center">C#</p>
             <ul>
-                <li>C# is a modern, object-oriented language developed by Microsoft.</li>
-                <li class="list-group-item-danger">It is primarily used for Windows application development, game development with Unity, and web development with ASP.NET.</li>
-                <li>C# integrates well with the .NET framework and provides features like strong typing, garbage collection, and a rich set of libraries.</li>
+                <li id="hoverElement">C# is a modern, object-oriented language developed by Microsoft.</li>
+                <li id="hoverElement" class="list-group-item-danger">It is primarily used for Windows application development, game development with Unity, and web development with ASP.NET.</li>
+                <li id="hoverElement">C# integrates well with the .NET framework and provides features like strong typing, garbage collection, and a rich set of libraries.</li>
             </ul>
         </div>
     </a>
@@ -124,9 +131,9 @@
             <img src="../images/Python.png" alt="Python">
             <p class="h3" style="text-align: center">Python:</p>
             <ul>
-                <li>Python is a high-level, dynamically-typed language known for its simplicity and readability.</li>
-                <li>It is commonly used in web development, data analysis, scientific computing, machine learning, and automation.</li>
-                <li>Python's extensive standard library and rich ecosystem of third-party packages make it versatile and suitable for various domains.</li>
+                <li id="hoverElement">Python is a high-level, dynamically-typed language known for its simplicity and readability.</li>
+                <li id="hoverElement">It is commonly used in web development, data analysis, scientific computing, machine learning, and automation.</li>
+                <li id="hoverElement">Python's extensive standard library and rich ecosystem of third-party packages make it versatile and suitable for various domains.</li>
             </ul>
         </div>
     </a>
@@ -135,9 +142,9 @@
             <img src ="../images/cpp.png" alt="c++">
             <p class="h3" style="text-align: center">C++:</p>
             <ul>
-                <li>C++ is a versatile and powerful programming language known for its performance and low-level control.</li>
-                <li>It is commonly used in systems programming, game development, embedded systems, and high-performance applications.</li>
-                <li>C++ is known for its ability to directly manipulate memory and provide a high level of performance optimization.</li>
+                <li id="hoverElement">C++ is a versatile and powerful programming language known for its performance and low-level control.</li>
+                <li id="hoverElement">It is commonly used in systems programming, game development, embedded systems, and high-performance applications.</li>
+                <li id="hoverElement">C++ is known for its ability to directly manipulate memory and provide a high level of performance optimization.</li>
             </ul>
         </div>
     </a>
@@ -146,16 +153,15 @@
             <img src ="../images/go.png" alt="Go">
             <p class="h3" style="text-align: center">Go</p>
             <ul>
-                <li>Go is a statically-typed, compiled language designed for simplicity and efficiency.</li>
-                <li>It is often used in system programming, web development, and cloud-based microservices.</li>
-                <li>Go's simplicity and strong support for concurrency and parallelism make it well-suited for building scalable and efficient software.</li>
+                <li id="hoverElement">Go is a statically-typed, compiled language designed for simplicity and efficiency.</li>
+                <li id="hoverElement">It is often used in system programming, web development, and cloud-based microservices.</li>
+                <li id="hoverElement">Go's simplicity and strong support for concurrency and parallelism make it well-suited for building scalable and efficient software.</li>
             </ul>
         </div>
     </a>
 </div>
 
 <br><br><br><br><br>
-<button class="text-center" id="top">Scroll To Top</button>
 </main>
 <footer>
     <div class = "mt-5 p-4 bg-dark text-white text-center">&copy; NoCopyrights</div>
