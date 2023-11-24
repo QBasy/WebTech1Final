@@ -15,11 +15,6 @@ const newDiv = $("<div class=\"container card\" style=\"width:500px\">\n" +
     "    <br>\n" +
     "</div>");
 
-const becameSenior = $("<video id=\"customVideo\" width=\"640\" height=\"360\" controls>\n" +
-"        <source src=\"../video/becameSenior.mp4\" type=\"video/mp4\">\n" +
-"      </video>");
-
-
 const submittedDiv = $("<h3 class='text-center'>Thanks for your Feedback, here is a button to start a simple game</h3>" +
     "<center><button id=\"startGame\" type=\"submit\" class=\"btn btn-primary\"><a href='../html/Drag&Drop.html'>Start Game</button></center>");
 const ids = ["python", "java", "c#", "c++", "go", "CJava", "CPython", ""];
@@ -56,10 +51,6 @@ function createFeedback() {
     $("#submitBtn").on("click", function () {
         submitFeedback();
     });
-}
-
-function becameSeniorFunc() {
-    $("#becameSenior").replaceWith(becameSenior);
 }
 function checkEmailMsg(email) {
     return feedback.name.test(email);
